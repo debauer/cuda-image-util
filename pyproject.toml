@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "cuda-image-util"
+version = "0.1.0"
+description = ""
+authors = ["David Bauer <bauer@synyx.de>"]
+readme = "README.md"
+packages = [{include = "cuda_image_util"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+opencv-python = "^4.7.0.68"
+numpy = "^1.24.1"
+sync = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^21.6b0"
+mypy = "^0.910"
+pylint = "^2.10.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
